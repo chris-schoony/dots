@@ -1,0 +1,23 @@
+return {
+  'nvim-lualine/lualine.nvim',
+  opts = {
+    sections = {
+      lualine_c = {
+        {
+          'filename',
+          path = 1,
+        },
+      },
+      lualine_x = {},
+      lualine_y = {},
+      lualine_z = { 'filetype' }
+    },
+    options = {
+      section_separators = '',
+      component_separators = '|',
+      disabled_filetypes = {
+        'NvimTree'
+      }
+    },
+  }
+}

@@ -1,0 +1,5 @@
+nvim/.config/nvim/undodir
+nvim/.config/nvim/plugin
+nvim-work/.config/nvim-work/undodir
+nvim-work/.config/nvim-work/plugin
+.DS_Store
