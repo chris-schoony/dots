@@ -14,7 +14,10 @@ return {
           find_command = { 'rg', '--files', '--hidden', '-g', '!.git', '-g', '!node_modules' }
         },
         live_grep = {
-          glob_pattern = { '!.git', '!node_modules' }
+          glob_pattern = { '!.git', '!node_modules' },
+          additional_args = function()
+            return { "--hidden" }
+          end
         }
       },
       extensions = {
