@@ -7,6 +7,7 @@ local servers = {
   tailwindcss = {},
   tsserver = {},
   mdx_analyzer = {},
+  glsl_analyzer = {},
   lua_ls = {
     settings = {
       Lua = {
