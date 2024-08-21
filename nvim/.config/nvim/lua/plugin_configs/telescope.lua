@@ -8,6 +8,7 @@ return {
     }
   },
   config = function()
+    local conf = require('telescope.config').values
     require('telescope').setup {
       pickers = {
         find_files = {
