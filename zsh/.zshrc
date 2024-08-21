@@ -25,3 +25,5 @@ v () {
 }
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+unset GEM_HOME
+autoload -Uz compinit && compinit

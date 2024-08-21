@@ -3,6 +3,12 @@ local servers = {
   html = {},
   emmet_ls = {},
   tsserver = {},
+  ruby_lsp = {},
+  eslint = {
+    on_attach = function()
+      vim.api.nvim_set_keymap("n", "<Leader>ef", ":EslintFixAll<CR>", { noremap = true, silent = true })
+    end,
+  },
   lua_ls = {
     settings = {
       Lua = {

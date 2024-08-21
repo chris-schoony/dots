@@ -8,13 +8,15 @@ return {
     }
   },
   config = function()
+    local conf = require('telescope.config').values
     require('telescope').setup {
       pickers = {
         find_files = {
           find_command = { 'rg', '--files', '--hidden', '-g', '!.git', '-g', '!node_modules' }
         },
         live_grep = {
-          glob_pattern = { '!.git', '!node_modules' }
+          glob_pattern = { '!.git', '!node_modules' },
+          vimgrep_arguments = table.insert(conf.vimgrep_arguments, '--fixed-strings'),
         }
       },
       extensions = {
