@@ -4,6 +4,7 @@ local servers = {
   emmet_ls = {},
   tsserver = {},
   ruby_lsp = {},
+  rubocop = {},
   eslint = {
     on_attach = function()
       vim.api.nvim_set_keymap("n", "<Leader>ef", ":EslintFixAll<CR>", { noremap = true, silent = true })
