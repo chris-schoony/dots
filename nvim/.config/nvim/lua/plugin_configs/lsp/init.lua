@@ -13,6 +13,14 @@ return {
     {
       "b0o/schemastore.nvim",
     },
+    {
+      "nvimdev/lspsaga.nvim",
+      opts = {
+        symbol_in_winbar = {
+          enable = false
+        }
+      }
+    }
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {
@@ -27,7 +35,7 @@ return {
         end
 
         map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
-        map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
+        map("<leader>ca", ":Lspsaga code_action<CR>", "[C]ode [A]ction")
         map("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
         map("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
         map("gI", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
