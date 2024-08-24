@@ -1,15 +1,12 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   dependencies = {
-    'windwp/nvim-ts-autotag'
+    'nvim-treesitter/nvim-treesitter-textobjects'
   },
   build = ":TSUpdate",
   opts = {
     auto_install = true,
     highlight = {
-      enable = true
-    },
-    autotag = {
       enable = true
     },
   },

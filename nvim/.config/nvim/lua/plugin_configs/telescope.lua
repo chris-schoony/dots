@@ -45,5 +45,6 @@ return {
     vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
     vim.api.nvim_set_keymap('n', '<leader>fs', ':Telescope live_grep<CR>', { noremap = true, silent = true })
     vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>fn', ':Telescope notify<CR>', { noremap = true, silent = true })
   end
 }
