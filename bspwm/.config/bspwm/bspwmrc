@@ -1,9 +1,8 @@
 #! /bin/sh
 pgrep -x sxhkd > /dev/null || sxhkd &
-xrandr --output HDMI-0 --off
 xrandr --output DP-0 --mode 3440x1440 --rate 144
+xrandr --output HDMI-0 --off
 xsetroot -cursor_name left_ptr
-systemctl --user restart wireplumber pipewire pipewire-pulse
 
 feh --bg-center ~/.config/assets/desktop.jpg
 
