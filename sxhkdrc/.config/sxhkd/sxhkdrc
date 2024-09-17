@@ -39,6 +39,6 @@ alt + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus or send to the given desktop
-ctrl + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+ctrl + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}'
 
