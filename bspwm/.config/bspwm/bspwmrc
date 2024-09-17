@@ -23,3 +23,5 @@ bspc config remove_disabled_monitors    true
 
 bspc monitor DP-0 -d 1 2 3 4 5
 
+bspc rule -a Spotify desktop=^4
+bspc rule -a discord desktop=^5
