@@ -4,7 +4,7 @@ xrandr --output DP-0 --mode 3440x1440 --rate 144
 xrandr --output HDMI-0 --off
 xsetroot -cursor_name left_ptr
 
-feh --bg-center ~/.config/assets/desktop.jpg
+feh --bg-center ~/.config/assets/linux_desktop.jpg
 
 picom -b
 
