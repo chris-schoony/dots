@@ -42,9 +42,10 @@ return {
 
     require('telescope').load_extension('fzf')
 
-    vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
-    vim.api.nvim_set_keymap('n', '<leader>fs', ':Telescope live_grep<CR>', { noremap = true, silent = true })
-    vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
-    vim.api.nvim_set_keymap('n', '<leader>fn', ':Telescope notify<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>sf', ':Telescope find_files<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>sg', ':Telescope live_grep<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>sb', ':Telescope buffers<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>sn', ':Telescope notify<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>sw', ':Telescope grep_string<CR>', { noremap = true, silent = true })
   end
 }
