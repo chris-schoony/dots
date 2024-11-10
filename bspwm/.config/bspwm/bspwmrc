@@ -1,7 +1,14 @@
-#! /bin/sh
+#! /bin/zsh
 pgrep -x sxhkd > /dev/null || sxhkd &
-xrandr --output DP-0 --mode 3440x1440 --rate 144
-xrandr --output HDMI-0 --off
+
+if [ -z "$LAPTOP" ]
+then
+  xrandr --output DP-0 --mode 3440x1440 --rate 144
+  xrandr --output HDMI-0 --off
+else
+  # put laptop stuff here?
+fi
+
 xsetroot -cursor_name left_ptr
 
 feh --bg-center ~/.config/assets/linux_desktop.jpg
