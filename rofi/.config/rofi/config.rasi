@@ -1,11 +1,10 @@
 configuration {
   display-drun: "Applications";
   drun-display-format: "{icon} {name}";
-  font: " JetBrainsMonoNL Nerd Font Mono 16";
+  font: " JetBrainsMonoNL Nerd Font Mono 32";
   modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";
-  dpi: 172;
 }
 
 @theme "/dev/null"
