@@ -1,14 +1,6 @@
 #! /bin/zsh
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-if [ -z "$LAPTOP" ]
-then
-  xrandr --output DP-0 --mode 3440x1440 --rate 144
-  xrandr --output HDMI-0 --off
-else
-  # put laptop stuff here?
-fi
-
 xsetroot -cursor_name left_ptr
 
 feh --bg-center ~/.config/assets/linux_desktop.jpg
@@ -17,8 +9,6 @@ picom -b
 
 killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar main_bar --config=~/.config/polybar/config.ini &
-
 
 killall -q syncthing
 syncthing &
@@ -32,7 +22,17 @@ bspc config borderless_monocle          true
 bspc config gapless_monocle             true
 bspc config remove_disabled_monitors    true
 
-bspc monitor DP-0 -d 1 2 3 4 5
+if [ -z "$LAPTOP" ]
+then
+  xrandr --output DP-0 --mode 3440x1440 --rate 144
+  xrandr --output HDMI-0 --off
+  bspc monitor DP-0 -d 1 2 3 4 5
+  polybar main_bar --config=~/.config/polybar/config.ini &
+else
+  xrandr --output eDP --mode 2880x1920 --rate 120
+  bspc monitor eDP -d 1 2 3 4 5
+  MONITOR=eDP polybar main_bar --config=~/.config/polybar/config.ini &
+fi
 
 bspc rule -a Spotify desktop=^4
 bspc rule -a discord desktop=^5
