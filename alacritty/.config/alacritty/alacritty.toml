@@ -1,3 +1,4 @@
+[general]
 import = ["~/font-size.toml", "~/.config/alacritty/catppuccin-mocha.toml"]
 
 [env]
