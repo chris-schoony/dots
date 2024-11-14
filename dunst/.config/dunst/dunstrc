@@ -5,11 +5,12 @@
   corner_radius = 6
   corners = all
   frame_width = 0
-  background = #313244
-  foreground = #cdd6f4
+  background = "#313244"
+  foreground = "#cdd6f4"
   horizontal_padding = 24
   text_icon_padding = 24
   min_icon_size = 24
   max_icon_size = 48
   width = 300
   height = 90
+  offset = (20, 20)
