@@ -42,3 +42,20 @@ alt + {_,shift + }{h,j,k,l}
 ctrl + {_,shift + }{1-5}
 	bspc {desktop -f,node -d} '^{1-5}'
 
+# audio
+XF86AudioMute
+  amixer set Master toggle
+XF86AudioLowerVolume
+  amixer set Master 5%-
+XF86AudioRaiseVolume
+  amixer set Master 5%+
+
+# brightness
+XF86MonBrightnessDown
+  brightnessctl s 25-
+XF86MonBrightnessUp
+  brightnessctl s 25+
+
+# screenshot
+alt + s
+  flameshot gui
