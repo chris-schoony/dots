@@ -57,5 +57,5 @@ XF86MonBrightnessUp
   brightnessctl s 25+
 
 # screenshot
-alt + s
+super + s
   flameshot gui
