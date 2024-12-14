@@ -1,8 +1,7 @@
 #! /bin/zsh
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-xrandr --output DP-0 --mode 3440x1440 --rate 144
-xrandr --output HDMI-0 --off
+xrandr --output DP-0 --mode 3440x1440 --rate 120
 
 xsetroot -cursor_name left_ptr
 
