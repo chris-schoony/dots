@@ -72,9 +72,6 @@ return {
       function(server_name)
         local server = servers[server_name]
         server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-        if server[on_attach] ~= nil then
-          server.on_attach = server[on_attach]
-        end
         require("lspconfig")[server_name].setup(server)
       end,
     })
