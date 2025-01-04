@@ -1,7 +1,7 @@
 configuration {
   display-drun: "Applications";
   drun-display-format: "{icon} {name}";
-  font: " JetBrainsMonoNL Nerd Font Mono 16";
+  font: "Mononoki Nerd Font 16";
   modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";

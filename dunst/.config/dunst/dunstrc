@@ -1,7 +1,7 @@
 [global]
   timeout = 5
   show_age_threshold = -1
-  font = "JetBrainsMonoNL Nerd Font Mono 10"
+  font = "Mononoki Nerd Font 10"
   corner_radius = 6
   corners = all
   frame_width = 0
