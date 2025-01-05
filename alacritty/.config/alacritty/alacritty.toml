@@ -5,7 +5,7 @@ import = ["~/font-size.toml", "~/.config/alacritty/catppuccin-mocha.toml"]
 TERM = "xterm-256color"
 
 [font.normal]
-family = "Mononoki Nerd Font"
+family = "MononokiNerdFontMono"
 
 [window]
 decorations = "buttonless"
