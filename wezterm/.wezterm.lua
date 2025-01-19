@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "catppuccin-mocha"
 config.font = wezterm.font("Mononoki Nerd Font Mono")
 config.enable_tab_bar = false
-config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 
 font_size.set(config)
 
