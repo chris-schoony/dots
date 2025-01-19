@@ -24,11 +24,8 @@ v () {
   fi
 }
 
-if [[ $(uname) == "Darwin" ]]; then
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-elif command -v apt > /dev/null; then
-  . "$HOME/.asdf/asdf.sh"
-fi
+# asdf
+. "$HOME/.asdf/asdf.sh"
 
 unset GEM_HOME
 autoload -Uz compinit && compinit
