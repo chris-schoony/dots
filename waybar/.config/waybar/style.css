@@ -1,0 +1,48 @@
+@define-color font #cdd6f4;
+@define-color font-dark #181825;
+@define-color font-empty-workspace #585b70;
+@define-color font-audio #cba6f7;
+@define-color bg #313244;
+@define-color bg-light #45475a;
+@define-color bg-focused-workspace #fab387;
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: 'Mononoki Nerd Font Propo';
+  font-size: 20px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#workspaces button {
+  padding: 10px 20px;
+  margin: 0;
+  color: @font;
+  background: @bg;
+}
+
+#workspaces button.empty {
+  color: @font-empty-workspace;
+}
+
+#workspaces button.active {
+  color: @font-dark;
+  background: @bg-focused-workspace;
+}
+
+#pulseaudio {
+  padding: 10px 20px;
+  margin: 0;
+  color: @font-audio;
+  background: @bg-light;
+}
+
+#clock {
+  padding: 10px 20px;
+  margin: 0;
+  color: @font;
+  background: @bg;
+}

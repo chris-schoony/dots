@@ -1,0 +1,28 @@
+{
+  "position": "bottom",
+  "margin": "0 12 12 12",
+  "reload_style_on_change": true,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "clock",
+    "pulseaudio"
+  ],
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  "pulseaudio": {
+    "format": "󰕾 {volume}",
+    "format-muted": "󰖁 {volume}",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pwvucontrol",
+    "tooltip": false
+  },
+  "clock": {
+    // "format": "{T %H:%M %p D %a %b %d}"
+    "format": " {0:%I:%M %p}   {0:%a %b %d}"
+  }
+}
