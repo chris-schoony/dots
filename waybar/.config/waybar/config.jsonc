@@ -22,7 +22,6 @@
     "tooltip": false
   },
   "clock": {
-    // "format": "{T %H:%M %p D %a %b %d}"
     "format": " {0:%I:%M %p}   {0:%a %b %d}"
   }
 }
