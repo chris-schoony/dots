@@ -44,7 +44,7 @@ window#waybar {
   padding: 4px 8px;
   margin-right: 6px;
   color: @font-audio;
-  background: @bg-light;
+  background: @bg;
   border-radius: 4px;
 }
 
