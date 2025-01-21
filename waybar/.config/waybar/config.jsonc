@@ -6,8 +6,8 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "clock",
-    "pulseaudio"
+    "pulseaudio",
+    "clock"
   ],
   "hyprland/workspaces": {
     "persistent-workspaces": {
@@ -22,6 +22,6 @@
     "tooltip": false
   },
   "clock": {
-    "format": " {0:%I:%M %p}   {0:%a %b %d}"
+    "format": "{:%I:%M %p}"
   }
 }
