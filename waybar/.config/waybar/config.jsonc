@@ -6,6 +6,7 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "battery",
     "pulseaudio",
     "clock"
   ],
@@ -23,5 +24,21 @@
   },
   "clock": {
     "format": "{:%I:%M %p}"
+  },
+  "battery": {
+    "format": "{icon} {capacity}",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "format-charging": "󰂄 {capacity}"
   }
 }

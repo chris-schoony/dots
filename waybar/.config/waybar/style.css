@@ -2,6 +2,7 @@
 @define-color font-dark #181825;
 @define-color font-empty-workspace #585b70;
 @define-color font-audio #cba6f7;
+@define-color font-battery #89b4fa;
 @define-color bg #313244;
 @define-color bg-light #45475a;
 @define-color bg-focused-workspace #fab387;
@@ -53,6 +54,15 @@ window#waybar {
   padding: 4px 8px;
   margin: 0;
   color: @font;
+  background: @bg;
+  border-radius: 4px;
+  border: 2px solid @bg-light;
+}
+
+#battery {
+  padding: 4px 8px;
+  margin-right: 6px;
+  color: @font-battery;
   background: @bg;
   border-radius: 4px;
   border: 2px solid @bg-light;
