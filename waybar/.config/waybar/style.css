@@ -18,7 +18,7 @@ window#waybar {
 }
 
 #workspaces {
-  padding: 4px 2px;
+  padding: 4px 4px;
   background: red;
   background: @bg;
   border-radius: 4px;
