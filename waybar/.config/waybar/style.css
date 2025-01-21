@@ -102,3 +102,17 @@ window#waybar {
   border: solid @bg-light;
   border-width: 2px 2px 2px 0;
 }
+
+#tray {
+  padding: 4px 8px;
+  margin-right: 6px;
+  background: @bg;
+  color: @font;
+  border: 2px solid @bg-light;
+  border-radius: 4px;
+}
+
+#tray menu {
+  background: @bg;
+  color: @font;
+}

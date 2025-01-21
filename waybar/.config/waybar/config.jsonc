@@ -10,6 +10,7 @@
     "custom/spotify-data"
   ],
   "modules-right": [
+    "tray",
     "battery",
     "pulseaudio",
     "clock"
@@ -76,5 +77,9 @@
     "exec": "$HOME/.config/waybar/scripts/spotify.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
     "tooltip": false
+  },
+  "tray": {
+    "spacing": 6,
+    "reverse-direction": true
   }
 }
