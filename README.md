@@ -1,4 +1,4 @@
 # Set up:
 
-1. Verify `stow` is installed
+1. Install `stow`
 2. Draw the rest of the owl
