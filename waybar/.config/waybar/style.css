@@ -46,6 +46,7 @@ window#waybar {
   color: @font-audio;
   background: @bg;
   border-radius: 4px;
+  border: 2px solid @bg-light;
 }
 
 #clock {
@@ -54,4 +55,5 @@ window#waybar {
   color: @font;
   background: @bg;
   border-radius: 4px;
+  border: 2px solid @bg-light;
 }

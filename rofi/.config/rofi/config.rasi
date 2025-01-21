@@ -1,7 +1,7 @@
 configuration {
   display-drun: "Applications";
   drun-display-format: "{icon} {name}";
-  font: "Mononoki Nerd Font 20";
+  font: "Mononoki Nerd Font 14";
   modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";
@@ -29,7 +29,7 @@ inputbar {
 }
 
 window {
-  width: 35%;
+  width: 50%;
   border-radius: 10;
 }
 
