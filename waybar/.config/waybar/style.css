@@ -6,6 +6,7 @@
 @define-color bg #313244;
 @define-color bg-light #45475a;
 @define-color bg-focused-workspace #fab387;
+@define-color bg-spotify #a6e3a1;
 
 * {
   border: none;
@@ -66,4 +67,38 @@ window#waybar {
   background: @bg;
   border-radius: 4px;
   border: 2px solid @bg-light;
+}
+
+#custom-spotify-prev {
+  padding: 4px 4px 4px 8px;
+  margin-left: 6px;
+  background: @bg-spotify;
+  color: @font-dark;
+  border-radius: 4px 0 0 4px;
+}
+
+#custom-spotify-play-pause {
+  padding: 4px 4px;
+  margin-left: 0;
+  background: @bg-spotify;
+  color: @font-dark;
+  border-radius: 0;
+}
+
+#custom-spotify-next {
+  padding: 4px 8px 4px 4px;
+  margin-left: 0;
+  background: @bg-spotify;
+  color: @font-dark;
+  border-radius: 0;
+}
+
+#custom-spotify-data {
+  padding: 4px 8px;
+  margin-left: 0;
+  background: @bg;
+  color: @font;
+  border-radius: 0 4px 4px 0;
+  border: solid @bg-light;
+  border-width: 2px 2px 2px 0;
 }

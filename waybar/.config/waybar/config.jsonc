@@ -3,7 +3,11 @@
   "margin": "0 8 8 8",
   "reload_style_on_change": true,
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "custom/spotify-prev",
+    "custom/spotify-play-pause",
+    "custom/spotify-next",
+    "custom/spotify-data"
   ],
   "modules-right": [
     "battery",
@@ -40,5 +44,37 @@
       "󰁹"
     ],
     "format-charging": "󰂄 {capacity}"
+  },
+  "custom/spotify-prev": {
+    "format": "{}",
+    "interval": 10,
+    "on-click": "playerctl -p spotify previous",
+    "exec": "echo 󰒮",
+    "exec-if": "pgrep spotify",
+    "tooltip": false
+  },
+  "custom/spotify-play-pause": {
+    "format": "{}",
+    "interval": 10,
+    "on-click": "playerctl -p spotify play-pause",
+    "exec": "$HOME/.config/waybar/scripts/spotify_play_pause.sh 2> /dev/null",
+    "exec-if": "pgrep spotify",
+    "tooltip": false
+  },
+  "custom/spotify-next": {
+    "format": "{}",
+    "interval": 10,
+    "on-click": "playerctl -p spotify next",
+    "exec": "echo 󰒭",
+    "exec-if": "pgrep spotify",
+    "tooltip": false
+  },
+  "custom/spotify-data": {
+    "format": "{}",
+    "interval": 10,
+    "on-click": "playerctl -p spotify next",
+    "exec": "$HOME/.config/waybar/scripts/spotify.sh 2> /dev/null",
+    "exec-if": "pgrep spotify",
+    "tooltip": false
   }
 }
