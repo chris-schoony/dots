@@ -44,7 +44,8 @@
       "󰂂",
       "󰁹"
     ],
-    "format-charging": "󰂄 {capacity}"
+    "format-charging": "󰂄 {capacity}",
+    "format-plugged": "󰂄 {capacity}"
   },
   "custom/spotify-prev": {
     "format": "{}",
