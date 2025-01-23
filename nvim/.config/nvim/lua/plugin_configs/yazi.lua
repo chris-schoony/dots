@@ -1,10 +1,10 @@
 return {
-	"mikavilpas/yazi.nvim",
-	event = "VeryLazy",
-	keys = {
-		{
-			"<leader>sd",
-			"<cmd>Yazi<cr>",
-		},
-	},
+  "mikavilpas/yazi.nvim",
+  event = "VeryLazy",
+  keys = {
+    {
+      "<leader>se",
+      "<cmd>Yazi<cr>",
+    },
+  },
 }
