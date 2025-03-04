@@ -3,10 +3,10 @@ local servers = {
   html = {},
   emmet_ls = {},
   ts_ls = {},
+  rubocop = {},
   ruby_lsp = {
     cmd_env = { BUNDLE_GEMFILE = "Users/chris.schoonover/lsp/Gemfile" },
   },
-  rubocop = {},
   eslint = {
     on_attach = function()
       vim.api.nvim_set_keymap("n", "<Leader>ef", ":EslintFixAll<CR>", { noremap = true, silent = true })
