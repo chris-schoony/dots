@@ -3,7 +3,6 @@ return {
   opts = {
     notify_on_error = false,
     format_on_save = {
-      timeout_ms = 500,
       lsp_fallback = true,
     },
     formatters_by_ft = {
@@ -14,9 +13,8 @@ return {
       javascriptreact = { 'prettier' },
       typescript = { 'prettier' },
       typescriptreact = { 'prettier' },
-      astro = { 'prettier' },
-      go = { 'gofmt' },
-      json = { 'prettier' }
+      json = { 'prettier' },
+      ruby = { 'rubocop' }
     },
   },
 }

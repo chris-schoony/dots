@@ -2,12 +2,16 @@ local servers = {
   cssls = {},
   html = {},
   emmet_ls = {},
-  gopls = {},
-  astro = {},
-  tailwindcss = {},
   ts_ls = {},
-  mdx_analyzer = {},
-  glsl_analyzer = {},
+  ruby_lsp = {
+    cmd_env = { BUNDLE_GEMFILE = "Users/chris.schoonover/lsp/Gemfile" },
+  },
+  rubocop = {},
+  eslint = {
+    on_attach = function()
+      vim.api.nvim_set_keymap("n", "<Leader>ef", ":EslintFixAll<CR>", { noremap = true, silent = true })
+    end,
+  },
   lua_ls = {
     settings = {
       Lua = {
