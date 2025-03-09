@@ -27,7 +27,7 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0 8px;
+  padding: 0 10px;
   margin: 0 2px;
   color: @font;
   border-radius: 3px;
@@ -43,7 +43,7 @@ window#waybar {
 }
 
 #pulseaudio {
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin-right: 6px;
   color: @font-audio;
   background: @bg;
@@ -52,7 +52,7 @@ window#waybar {
 }
 
 #clock {
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin: 0;
   color: @font;
   background: @bg;
@@ -61,7 +61,7 @@ window#waybar {
 }
 
 #custom-spotify-prev {
-  padding: 4px 4px 4px 8px;
+  padding: 4px 5px 4px 10px;
   margin-left: 6px;
   background: @bg-spotify;
   color: @font-dark;
@@ -69,7 +69,7 @@ window#waybar {
 }
 
 #custom-spotify-play-pause {
-  padding: 4px 4px;
+  padding: 4px 5px;
   margin-left: 0;
   background: @bg-spotify;
   color: @font-dark;
@@ -77,7 +77,7 @@ window#waybar {
 }
 
 #custom-spotify-next {
-  padding: 4px 8px 4px 4px;
+  padding: 4px 10px 4px 5px;
   margin-left: 0;
   background: @bg-spotify;
   color: @font-dark;
@@ -85,7 +85,7 @@ window#waybar {
 }
 
 #custom-spotify-data {
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin-left: 0;
   background: @bg;
   color: @font;
@@ -95,7 +95,7 @@ window#waybar {
 }
 
 #tray {
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin-right: 6px;
   background: @bg;
   color: @font;
