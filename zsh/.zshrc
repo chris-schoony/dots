@@ -11,6 +11,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 alias ls="eza --icons"
 alias la="eza -l --icons --git -a"
 alias tl="~/scripts/timelapse.sh -int 3"
+alias kb="sudo sh -c 'echo 2 > /sys/module/hid_apple/parameters/fnmode'"
 
 eval "$(starship init zsh)"
 
