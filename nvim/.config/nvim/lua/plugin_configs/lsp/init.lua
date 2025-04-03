@@ -69,7 +69,6 @@ return {
     mason_lspconfig.setup_handlers({
       function(server_name)
         local server = servers[server_name]
-        print("Setting up LSP for " .. server_name)
         server.capabilities = require("blink.cmp").get_lsp_capabilities(server.capabilities)
         -- server.capabilities.textDocument.completion.completionItem.snippetSupport = true
         lspconfig[server_name].setup(server)
