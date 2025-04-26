@@ -25,7 +25,7 @@ v () {
 }
 
 # asdf
-. "$HOME/.asdf/asdf.sh"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 unset GEM_HOME
 autoload -Uz compinit && compinit
