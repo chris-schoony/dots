@@ -17,16 +17,8 @@ eval "$(starship init zsh)"
 
 # functions
 v () { 
-  if [ -z "$WORK" ]
-  then
-    nvim $1
-  else
-    NVIM_APPNAME=nvim-work nvim $1
-  fi
+  nvim $1
 }
 
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
-unset GEM_HOME
-autoload -Uz compinit && compinit
