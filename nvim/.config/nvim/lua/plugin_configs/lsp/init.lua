@@ -2,10 +2,10 @@ return {
   "neovim/nvim-lspconfig",
   dependencies = {
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       config = true,
     },
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
     "saghen/blink.cmp",
     {
       "j-hui/fidget.nvim",
