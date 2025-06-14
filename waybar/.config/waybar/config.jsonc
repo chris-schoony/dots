@@ -31,15 +31,15 @@
   },
   "custom/spotify-prev": {
     "format": "{}",
-    "interval": 10,
+    "interval": 5,
     "on-click": "playerctl -p spotify previous",
-    "exec": "echo 󰒮",
+    "exec": "$HOME/.config/waybar/scripts/spotify_next.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
     "tooltip": false
   },
   "custom/spotify-play-pause": {
     "format": "{}",
-    "interval": 10,
+    "interval": 5,
     "on-click": "playerctl -p spotify play-pause",
     "exec": "$HOME/.config/waybar/scripts/spotify_play_pause.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
@@ -47,17 +47,16 @@
   },
   "custom/spotify-next": {
     "format": "{}",
-    "interval": 10,
+    "interval": 5,
     "on-click": "playerctl -p spotify next",
-    "exec": "echo 󰒭",
+    "exec": "$HOME/.config/waybar/scripts/spotify_next.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
     "tooltip": false
   },
   "custom/spotify-data": {
     "format": "{}",
-    "interval": 10,
-    "on-click": "playerctl -p spotify next",
-    "exec": "$HOME/.config/waybar/scripts/spotify.sh 2> /dev/null",
+    "interval": 5,
+    "exec": "$HOME/.config/waybar/scripts/spotify_song_info.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
     "tooltip": false
   },
