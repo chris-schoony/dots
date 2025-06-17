@@ -60,20 +60,19 @@ return {
 
     require("mason").setup()
     local mason_lspconfig = require("mason-lspconfig")
+    local lspconfig = require("lspconfig")
 
     mason_lspconfig.setup({
       ensure_installed = vim.tbl_keys(servers),
+      handlers = {
+        function(server_name)
+          local server = servers[server_name] or {}
+          server.capabilities = require("blink.cmp").get_lsp_capabilities(server.capabilities)
+          lspconfig[server_name].setup(server)
+        end,
+      },
     })
 
-    local lspconfig = require("lspconfig")
-    mason_lspconfig.setup_handlers({
-      function(server_name)
-        local server = servers[server_name]
-        server.capabilities = require("blink.cmp").get_lsp_capabilities(server.capabilities)
-        -- server.capabilities.textDocument.completion.completionItem.snippetSupport = true
-        lspconfig[server_name].setup(server)
-      end,
-    })
     vim.diagnostic.config({
       signs = {
         text = {
