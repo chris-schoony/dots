@@ -33,7 +33,7 @@
     "format": "{}",
     "interval": 5,
     "on-click": "playerctl -p spotify previous",
-    "exec": "$HOME/.config/waybar/scripts/spotify_next.sh 2> /dev/null",
+    "exec": "$HOME/.config/waybar/scripts/spotify_prev.sh 2> /dev/null",
     "exec-if": "pgrep spotify",
     "tooltip": false
   },
