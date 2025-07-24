@@ -5,7 +5,7 @@ local servers = {
   ts_ls = {},
   rubocop = {},
   ruby_lsp = {
-    cmd_env = { BUNDLE_GEMFILE = "Users/chris.schoonover/lsp/Gemfile" },
+    cmd_env = { BUNDLE_GEMFILE = "~/Developer/Gemfile" },
   },
   eslint = {
     on_attach = function()
