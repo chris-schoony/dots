@@ -3,7 +3,6 @@ return {
 	dependencies = {
 		{
 			"williamboman/mason.nvim",
-			dependencies = { "mason-org/mason-registry" },
 			config = true,
 		},
 		"williamboman/mason-lspconfig.nvim",
