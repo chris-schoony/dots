@@ -6,7 +6,7 @@
 @define-color bg #313244;
 @define-color bg-light #45475a;
 @define-color bg-focused-workspace #fab387;
-@define-color bg-spotify #a6e3a1;
+@define-color bg-music #cba6f7;
 
 * {
   border: none;
@@ -60,31 +60,31 @@ window#waybar {
   border: 2px solid @bg-light;
 }
 
-#custom-spotify-prev {
+#custom-music-prev {
   padding: 4px 5px 4px 10px;
   margin-left: 6px;
-  background: @bg-spotify;
+  background: @bg-music;
   color: @font-dark;
   border-radius: 4px 0 0 4px;
 }
 
-#custom-spotify-play-pause {
+#custom-music-play-pause {
   padding: 4px 5px;
   margin-left: 0;
-  background: @bg-spotify;
+  background: @bg-music;
   color: @font-dark;
   border-radius: 0;
 }
 
-#custom-spotify-next {
+#custom-music-next {
   padding: 4px 10px 4px 5px;
   margin-left: 0;
-  background: @bg-spotify;
+  background: @bg-music;
   color: @font-dark;
   border-radius: 0;
 }
 
-#custom-spotify-data {
+#custom-music-data {
   padding: 4px 10px;
   margin-left: 0;
   background: @bg;
