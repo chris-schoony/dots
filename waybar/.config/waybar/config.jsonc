@@ -31,7 +31,7 @@
   },
   "custom/music-prev": {
     "format": "{}",
-    "interval": 5,
+    "interval": 1,
     "on-click": "playerctl -p tidal-hifi previous",
     "exec": "$HOME/.config/waybar/scripts/prev.sh 2> /dev/null",
     "exec-if": "pgrep tidal-hifi",
@@ -39,7 +39,7 @@
   },
   "custom/music-play-pause": {
     "format": "{}",
-    "interval": 5,
+    "interval": 1,
     "on-click": "playerctl -p tidal-hifi play-pause",
     "exec": "$HOME/.config/waybar/scripts/play_pause.sh 2> /dev/null",
     "exec-if": "pgrep tidal-hifi",
@@ -47,7 +47,7 @@
   },
   "custom/music-next": {
     "format": "{}",
-    "interval": 5,
+    "interval": 1,
     "on-click": "playerctl -p tidal-hifi next",
     "exec": "$HOME/.config/waybar/scripts/next.sh 2> /dev/null",
     "exec-if": "pgrep tidal-hifi",
@@ -55,7 +55,7 @@
   },
   "custom/music-data": {
     "format": "{}",
-    "interval": 5,
+    "interval": 1,
     "exec": "$HOME/.config/waybar/scripts/song_info.sh 2> /dev/null",
     "exec-if": "pgrep tidal-hifi",
     "tooltip": false
