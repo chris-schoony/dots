@@ -1,4 +1,3 @@
-config-file = ?~/.config/ghostty-font-size
 theme = "Catppuccin Mocha"
 font-family = "Mononoki Nerd Font Mono"
 cursor-style = block
