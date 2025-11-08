@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- clear search highlights
 vim.api.nvim_set_keymap("n", "<Leader>ch", ":noh<CR>", { noremap = true, silent = true })
 -- escape

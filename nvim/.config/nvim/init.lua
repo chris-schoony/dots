@@ -1,6 +1,5 @@
--- CONFIG
-require("settings")
-require("keymaps")
-require("plugins")
-require("autocmd")
-require("filetype_add")
+require("config.lazy")
+require("config.settings")
+require("config.keymaps")
+require("config.filetype_add")
+require("config.lsp")
